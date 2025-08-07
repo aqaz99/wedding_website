@@ -1,26 +1,10 @@
 <script setup lang="ts">
-import Testing from './components/Testing.vue'
+import Testing from './components/HomePage.vue'
 </script>
 
 <template>
-	<i class="pi pi-check"></i>
-<i class="pi pi-times"></i>
-<span class="pi pi-search"></span>
-<span class="pi pi-user"></span>
   <Testing/>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>

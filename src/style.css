@@ -11,4 +11,30 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Custom palette */
+  --babys-breath: #eadecf;
+  --palette-primary-50: var(--p-emerald-50);
+  --palette-primary-100: var(--p-emerald-100);
+  --palette-primary-200: var(--p-emerald-200);
+  --palette-primary-300: var(--p-emerald-300);
+  --palette-primary-400: var(--p-emerald-400);
+  --palette-primary-500: var(--p-emerald-500);
+  --palette-primary-600: var(--p-emerald-600);
+  --palette-primary-700: var(--p-emerald-700);
+  --palette-primary-800: var(--p-emerald-800);
+  --palette-primary-900: var(--p-emerald-900);
+
+  --p-primary-color: var(--babys-breath) !important;
+
+  --p-primary-50: var(--palette-primary-50) !important;
+  --p-primary-100: var(--palette-primary-100) !important;
+  --p-primary-200: var(--palette-primary-200) !important;
+  --p-primary-300: var(--palette-primary-300) !important;
+  --p-primary-400: var(--palette-primary-400) !important;
+  --p-primary-500: var(--palette-primary-500) !important;
+  --p-primary-600: var(--palette-primary-600) !important;
+  --p-primary-700: var(--palette-primary-700) !important;
+  --p-primary-800: var(--palette-primary-800) !important;
+  --p-primary-900: var(--palette-primary-900) !important;
 }

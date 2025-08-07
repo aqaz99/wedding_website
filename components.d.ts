@@ -9,6 +9,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ColorPicker: typeof import('primevue/colorpicker')['default']
+    HomePage: typeof import('./src/components/HomePage.vue')['default']
+    Menubar: typeof import('primevue/menubar')['default']
     Testing: typeof import('./src/components/Testing.vue')['default']
   }
 }
