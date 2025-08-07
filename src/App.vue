@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import Testing from './components/HomePage.vue'
+import HomePage from "./components/HomePage.vue";
 </script>
 
 <template>
-  <Testing/>
+  <HomePage />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

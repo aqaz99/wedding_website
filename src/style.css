@@ -3,29 +3,84 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--p-primary-color);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Custom palette --tints.dev-- */
+  /* Baby's Breath #eadecf */
+  --color-babys-breath-50: #fdfdfb;
+  --color-babys-breath-100: #faf8f4;
+  --color-babys-breath-200: #f7f3ed;
+  --color-babys-breath-300: #f3ebe3;
+  --color-babys-breath-400: #eee4d8;
+  --color-babys-breath-500: #eadecf;
+  --color-babys-breath-600: #cfb391;
+  --color-babys-breath-700: #b48a55;
+  --color-babys-breath-800: #7c5d36;
+  --color-babys-breath-900: #3c2d1a;
+  --color-babys-breath-950: #20180e;
 
-  /* Custom palette */
-  --babys-breath: #eadecf;
-  --palette-primary-50: var(--p-emerald-50);
-  --palette-primary-100: var(--p-emerald-100);
-  --palette-primary-200: var(--p-emerald-200);
-  --palette-primary-300: var(--p-emerald-300);
-  --palette-primary-400: var(--p-emerald-400);
-  --palette-primary-500: var(--p-emerald-500);
-  --palette-primary-600: var(--p-emerald-600);
-  --palette-primary-700: var(--p-emerald-700);
-  --palette-primary-800: var(--p-emerald-800);
-  --palette-primary-900: var(--p-emerald-900);
+  /* Creamy Petals #edc39d */
+  --color-creamy-petals-50: #fdfaf6;
+  --color-creamy-petals-100: #fbf2e9;
+  --color-creamy-petals-200: #f8e7d8;
+  --color-creamy-petals-300: #f4dac3;
+  --color-creamy-petals-400: #f1d0b1;
+  --color-creamy-petals-500: #edc39d;
+  --color-creamy-petals-600: #e19b5b;
+  --color-creamy-petals-700: #c67124;
+  --color-creamy-petals-800: #864c19;
+  --color-creamy-petals-900: #41250c;
+  --color-creamy-petals-950: #221406;
 
-  --p-primary-color: var(--babys-breath) !important;
+  /* Yello Tulip #ceba59 */
+  --color-yellow-tulip-50: #faf8ef;
+  --color-yellow-tulip-100: #f6f2df;
+  --color-yellow-tulip-200: #ebe3bc;
+  --color-yellow-tulip-300: #e2d69d;
+  --color-yellow-tulip-400: #d7c779;
+  --color-yellow-tulip-500: #ceba59;
+  --color-yellow-tulip-600: #b59f35;
+  --color-yellow-tulip-700: #8a7929;
+  --color-yellow-tulip-800: #5b501b;
+  --color-yellow-tulip-900: #2f2a0e;
+  --color-yellow-tulip-950: #181507;
+
+  /* Leaves of Green #626b2e */
+  --color-leaves-of-green-50: #f2f4e6;
+  --color-leaves-of-green-100: #e5eacd;
+  --color-leaves-of-green-200: #ccd49b;
+  --color-leaves-of-green-300: #b2bf69;
+  --color-leaves-of-green-400: #909d43;
+  --color-leaves-of-green-500: #626b2e;
+  --color-leaves-of-green-600: #4e5625;
+  --color-leaves-of-green-700: #3b401c;
+  --color-leaves-of-green-800: #272b12;
+  --color-leaves-of-green-900: #141509;
+  --color-leaves-of-green-950: #0a0b05;
+
+  /* Soft Sky Blue #839ea8 */
+  --color-soft-sky-blue-50: #f3f6f7;
+  --color-soft-sky-blue-100: #e7ecee;
+  --color-soft-sky-blue-200: #ccd7db;
+  --color-soft-sky-blue-300: #b4c4ca;
+  --color-soft-sky-blue-400: #9cb2ba;
+  --color-soft-sky-blue-500: #839ea8;
+  --color-soft-sky-blue-600: #63828d;
+  --color-soft-sky-blue-700: #4a6069;
+  --color-soft-sky-blue-800: #303f45;
+  --color-soft-sky-blue-900: #192124;
+  --color-soft-sky-blue-950: #0d1112;
+
+  --palette-primary-50: var(--color-leaves-of-green-50);
+  --palette-primary-100: var(--color-leaves-of-green-100);
+  --palette-primary-200: var(--color-leaves-of-green-200);
+  --palette-primary-300: var(--color-leaves-of-green-300);
+  --palette-primary-400: var(--color-leaves-of-green-400);
+  --palette-primary-500: var(--color-leaves-of-green-500);
+  --palette-primary-600: var(--color-leaves-of-green-600);
+  --palette-primary-700: var(--color-leaves-of-green-700);
+  --palette-primary-800: var(--color-leaves-of-green-800);
+  --palette-primary-900: var(--color-leaves-of-green-900);
 
   --p-primary-50: var(--palette-primary-50) !important;
   --p-primary-100: var(--palette-primary-100) !important;
@@ -37,4 +92,26 @@
   --p-primary-700: var(--palette-primary-700) !important;
   --p-primary-800: var(--palette-primary-800) !important;
   --p-primary-900: var(--palette-primary-900) !important;
+
+  --p-secondary-50: var(--color-soft-sky-blue-50) !important;
+  --p-secondary-100: var(--color-soft-sky-blue-100) !important;
+  --p-secondary-200: var(--color-soft-sky-blue-200) !important;
+  --p-secondary-300: var(--color-soft-sky-blue-300) !important;
+  --p-secondary-400: var(--color-soft-sky-blue-400) !important;
+  --p-secondary-500: var(--color-soft-sky-blue-500) !important;
+  --p-secondary-600: var(--color-soft-sky-blue-600) !important;
+  --p-secondary-700: var(--color-soft-sky-blue-700) !important;
+  --p-secondary-800: var(--color-soft-sky-blue-800) !important;
+  --p-secondary-900: var(--color-soft-sky-blue-900) !important;
+
+  --p-surface-50: var(--palette-primary-100) !important;
+  --p-surface-100: var(--palette-primary-200) !important;
+  --p-surface-200: var(--palette-primary-300) !important;
+  --p-surface-300: var(--palette-primary-400) !important;
+  --p-surface-400: var(--palette-primary-500) !important;
+  --p-surface-500: var(--palette-primary-600) !important;
+  --p-surface-600: var(--palette-primary-700) !important;
+  --p-surface-700: var(--palette-primary-800) !important;
+  --p-surface-800: var(--palette-primary-900) !important;
+  --p-surface-900: var(--palette-primary-900) !important;
 }
