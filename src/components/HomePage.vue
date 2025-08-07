@@ -1,6 +1,10 @@
 <template>
-  <div class="card">
-    <Menubar :model="items" />
+  <div class="wedding-navbar">
+    <Menubar :model="items" class="justify-content-end">
+      <template #start>
+        <div class="brand-title">James &amp; Melanie.<br /><small>Tie the knot!</small></div>
+      </template>
+    </Menubar>
   </div>
 </template>
 
@@ -8,55 +12,22 @@
 import { ref } from "vue";
 
 const items = ref([
-  {
-    label: "Home",
-    icon: "pi pi-home",
-  },
-  {
-    label: "Features",
-    icon: "pi pi-star",
-  },
-  {
-    label: "Projects",
-    icon: "pi pi-search",
-    items: [
-      {
-        label: "Components",
-        icon: "pi pi-bolt",
-      },
-      {
-        label: "Blocks",
-        icon: "pi pi-server",
-      },
-      {
-        label: "UI Kit",
-        icon: "pi pi-pencil",
-      },
-      {
-        label: "Templates",
-        icon: "pi pi-palette",
-        items: [
-          {
-            label: "Apollo",
-            icon: "pi pi-palette",
-          },
-          {
-            label: "Ultima",
-            icon: "pi pi-palette",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Contact",
-    icon: "pi pi-envelope",
-  },
+  { label: "Our Story", to: "/story" },
+  { label: "Wedding Details", to: "/details" },
+  { label: "Dress Code", to: "/dress-code" },
+  { label: "Gifts Registry", to: "/registry" },
+  { label: "Engagement", to: "/engagement" },
+  { label: "RSVP", to: "/rsvp" },
 ]);
 </script>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+.wedding-navbar .p-menubar {
+  justify-content: flex-end;
+}
+.brand-title {
+  color: var(--color-babys-breath-700);
+  font-size: 1.1rem;
+  line-height: 1.2;
 }
 </style>
